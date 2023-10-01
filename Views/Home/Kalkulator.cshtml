@@ -1,0 +1,13 @@
+﻿@model lab1.Models.Kalkulator
+@{
+    ViewData["Title"] = "Policzmy to razem!";
+}
+<h1>Powiedz co chcesz policzyć:</h1>
+<form>
+    <input type="number" asp-for="A" />Liczba A
+    <input type="number" asp-for="B" />Liczba B
+    <input type="text" asp-for="Operacja" /> Wpisz + lub - lub * lub /
+    <input type="submit" />
+</form>
+
+@ViewBag.liczymy
